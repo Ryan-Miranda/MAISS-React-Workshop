@@ -35,12 +35,13 @@ export default function Profiles({setPage}) {
         setPage("Profiles");
     });
 
+    // make a GET request to the dummy API
     const getData = async () => {
         fetch("https://jsonplaceholder.typicode.com/users", {
             method: "GET",
             dataType: "JSON",
             headers: {
-            "Content-Type": "application/json; charset=utf-8",
+                "Content-Type": "application/json; charset=utf-8",
             }
         })
         .then((resp) => {
@@ -54,6 +55,8 @@ export default function Profiles({setPage}) {
         })
     }
 
+    // Button's onClick calls getData
+    // user's mapped to produce a Link for each user returned from the GET request
     return (
         <Box mt={16} mb={16} className={classes.root}>
 

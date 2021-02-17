@@ -18,6 +18,7 @@ const useStyles = makeStyles((theme) => ({
 export default function Home({setPage}) {
     const classes = useStyles();
 
+    // Call the setPage function defined in App.js to show how a child component can edit the state of a parent
     useEffect(() => {
         setPage("Home");
     });

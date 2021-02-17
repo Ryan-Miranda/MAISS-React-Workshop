@@ -1,11 +1,13 @@
 import React, { useEffect } from 'react'
 
+// Components we need from Material-UI
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import Box from '@material-ui/core/Box';
 import Grid from '@material-ui/core/Grid';
 import AppBar from '@material-ui/core/AppBar';
 
+// Link component needed for routing
 import { Link } from "react-router-dom";
 
 
@@ -38,6 +40,7 @@ const useStyles = makeStyles((theme) => ({
 export default function Header({ pageNum }) {
     const classes = useStyles();
 
+    // Example of how to execute code every time the component loads in
     useEffect(() => {
       console.log(pageNum);
     });

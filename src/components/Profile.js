@@ -18,6 +18,7 @@ const useStyles = makeStyles((theme) => ({
 export default function Profile({match}) {
     const classes = useStyles();
 
+    // acccess the username stored in the url (stored in math.params)
     return (
         <Box mt={16} mb={16} className={classes.root}>
             <Typography variant="h3">{match.params.username}'s Profile</Typography>
